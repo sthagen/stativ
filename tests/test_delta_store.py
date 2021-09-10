@@ -6,7 +6,7 @@ import pathlib
 import pytest  # type: ignore
 
 import stativ.stativ as tripod
-import stativ.delta_store
+import stativ.delta_store as delta
 
 DELTA_STORE_DATA_ROOT = pathlib.Path('tests', 'fixtures', 'delta_store')
 DELTA_PROXY_ROOT = pathlib.Path(DELTA_STORE_DATA_ROOT, 'store')
@@ -40,3 +40,9 @@ def test_delta_store_fixture_proxy_intact():
     assert 'path' in entry_data
     recombined_key = f'{entry_data["repo_key"]}/{entry_data["path"]}'
     assert recombined_key == entry_key
+
+
+def test_delta_is_delta_store():
+    assert delta.is_delta_store(DELTA_PROXY_DB_SAMPLE) is False
+    assert delta.is_delta_store(DELTA_PROXY_ROOT) is False
+    assert delta.is_delta_store(DELTA_STORE_DATA_ROOT) is True
