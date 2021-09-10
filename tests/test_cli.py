@@ -92,7 +92,7 @@ def test_backup_store_fixture_ok():
     assert BACKUP_DATA_REPO_FOLDER_LEVEL_3_FILE_1_CONTENT_SAMPLE.is_file()
     assert BACKUP_DATA_REPO_FOLDER_LEVEL_3_FILE_1_META_SAMPLE.is_file()
     a_path = BACKUP_DATA_REPO_FOLDER_LEVEL_3_FILE_1_META_SAMPLE
-    with open(a_path, "rt", encoding=bdd.ENCODING) as handle:
+    with open(a_path, "rt", encoding=stativ.ENCODING) as handle:
         meta = handle.read()
     assert SHA1 in meta
     assert SHA256 in meta
