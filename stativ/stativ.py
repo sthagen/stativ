@@ -17,7 +17,7 @@ BRM_STORE_ROOT = pathlib.Path(
 ENCODING = "utf-8"
 
 BRM_BACKUP_ROOT = pathlib.Path(
-     BRMANCHOR, BRM_NAME, "backup/"
+     BRM_ANCHOR, BRM_NAME, "backup/"
 )
 
 
