@@ -5,8 +5,8 @@ import pathlib
 
 import pytest  # type: ignore
 
-import brm_daily_delta.brm_daily_delta as bdd
-import brm_daily_delta.delta_store
+import stativ.stativ
+import stativ.delta_store
 
 DELTA_STORE_DATA_ROOT = pathlib.Path('tests', 'fixtures', 'delta_store')
 DELTA_PROXY_ROOT = pathlib.Path(DELTA_STORE_DATA_ROOT, 'store')
@@ -20,13 +20,13 @@ def test_delta_store_fixture_present():
 
 
 def test_delta_store_fixture_proxy_present():
-    with open(DELTA_PROXY_DB_SAMPLE, "rt", encoding=bdd.ENCODING) as handle:
+    with open(DELTA_PROXY_DB_SAMPLE, "rt", encoding=stativ.ENCODING) as handle:
         proxy = json.load(handle)
     assert '_meta' in proxy
 
 
 def test_delta_store_fixture_proxy_intact():
-    with open(DELTA_PROXY_DB_SAMPLE, "rt", encoding=bdd.ENCODING) as handle:
+    with open(DELTA_PROXY_DB_SAMPLE, "rt", encoding=stativ.ENCODING) as handle:
         proxy = json.load(handle)
     meta = proxy['_meta']
     assert 'key' in meta
