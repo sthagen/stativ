@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<brm-file>
+  <repoPath>
+    <repoKey>foo-bar-baz-local</repoKey>
+    <path>ABC/2021/Public/DEF.txt</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>DEF.txt</name>
+  <created>1604475734567</created>
+  <lastModified>1604475745678</lastModified>
+  <size>123</size>
+  <additionalInfo>
+    <createdBy>some</createdBy>
+    <modifiedBy>other</modifiedBy>
+    <lastUpdated>1604475745678</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>950e189624aa6d753077940f657b7ea8a67159d1</original>
+          <actual>950e189624aa6d753077940f657b7ea8a67159d1</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>5da6fa6713b848ad18c16cf655859960</original>
+          <actual>5da6fa6713b848ad18c16cf655859960</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>a157d0670337432cb74ebb139f8f4febb314bce7218bf65df83770de73d0a78b</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</brm-file>
