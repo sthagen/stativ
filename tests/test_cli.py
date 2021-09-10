@@ -5,7 +5,7 @@ import pathlib
 
 import pytest  # type: ignore
 
-import stativ.stativ
+import stativ.stativ as tripod
 
 BRM_HASH_POLICY_DEFAULT = "sha256"
 BRM_HASH_POLICY_LEGACY = "sha1"
@@ -76,8 +76,8 @@ def _derive_fingerprints(algorithms, file_path):
 
 
 def test_zero_minimal():
-    assert '__name__' in dir(bdd)
-    assert bdd.__name__ == 'brm_daily_delta.brm_daily_delta'
+    assert '__name__' in dir(tripod)
+    assert tripod.__name__ == 'stativ.stativ'
 
 
 def test_prefix_store_fixture_ok():
@@ -92,7 +92,7 @@ def test_backup_store_fixture_ok():
     assert BACKUP_DATA_REPO_FOLDER_LEVEL_3_FILE_1_CONTENT_SAMPLE.is_file()
     assert BACKUP_DATA_REPO_FOLDER_LEVEL_3_FILE_1_META_SAMPLE.is_file()
     a_path = BACKUP_DATA_REPO_FOLDER_LEVEL_3_FILE_1_META_SAMPLE
-    with open(a_path, "rt", encoding=stativ.ENCODING) as handle:
+    with open(a_path, "rt", encoding=tripod.ENCODING) as handle:
         meta = handle.read()
     assert SHA1 in meta
     assert SHA256 in meta

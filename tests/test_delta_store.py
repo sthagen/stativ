@@ -5,7 +5,7 @@ import pathlib
 
 import pytest  # type: ignore
 
-import stativ.stativ
+import stativ.stativ as tripod
 import stativ.delta_store
 
 DELTA_STORE_DATA_ROOT = pathlib.Path('tests', 'fixtures', 'delta_store')
@@ -20,13 +20,13 @@ def test_delta_store_fixture_present():
 
 
 def test_delta_store_fixture_proxy_present():
-    with open(DELTA_PROXY_DB_SAMPLE, "rt", encoding=stativ.ENCODING) as handle:
+    with open(DELTA_PROXY_DB_SAMPLE, "rt", encoding=tripod.ENCODING) as handle:
         proxy = json.load(handle)
     assert '_meta' in proxy
 
 
 def test_delta_store_fixture_proxy_intact():
-    with open(DELTA_PROXY_DB_SAMPLE, "rt", encoding=stativ.ENCODING) as handle:
+    with open(DELTA_PROXY_DB_SAMPLE, "rt", encoding=tripod.ENCODING) as handle:
         proxy = json.load(handle)
     meta = proxy['_meta']
     assert 'key' in meta
