@@ -9,6 +9,9 @@ import json
 import os
 import pathlib
 
+import stativ.delta_store as delta
+
+
 BRM_NAME = os.getenv('BRM_NAME', "brm")
 BRM_ANCHOR = os.getenv('BRM_ANCHOR', "/")
 BRM_STORE_ROOT = pathlib.Path(
@@ -30,6 +33,10 @@ def main(argv=None):
     print(f"Starting execution in folder ({pathlib.Path('.')})")
     print(f"- Assuming BRM storage root at ({BRM_STORE_ROOT}) i.e. the bucket store")
     print(f"- Assuming BRM backup root at ({BRM_BACKUP_ROOT}) i.e. the archival class artifacts")
+
+    if not delta.is_delta_store(pathlib.Path('')):
+        print("THere is no delta store in the current directory ...")
+        return 2
 
     with open(pathlib.Path("store", "proxy.json"), "rt", encoding=ENCODING) as handle:
         proxy = json.load(handle)
@@ -171,16 +178,11 @@ def main(argv=None):
     for key, val in proxy.items():
         gone[key] = val
 
-    with open("gone.json", "wt", encoding=ENCODING) as handle:
-        json.dump(gone, handle, indent=2)
-    with open("change.json", "wt", encoding=ENCODING) as handle:
-        json.dump(change, handle, indent=2)
-    with open("enter.json", "wt", encoding=ENCODING) as handle:
-        json.dump(enter, handle, indent=2)
-    with open("keep.json", "wt", encoding=ENCODING) as handle:
-        json.dump(keep, handle, indent=2)
-    with open("remain.json", "wt", encoding=ENCODING) as handle:
-        json.dump(remain, handle, indent=2)
+    delta.dump_gone(gone, indent=True)
+    delta.dump_change(change, indent=True)
+    delta.dump_enter(enter, indent=True)
+    delta.dump_keep(keep, indent=True)
+    delta.dump_remain(remain, indent=True)
 
     if len(remain) != 1 + entered + changed + kept:
         print("WARNING:  len(remain) != 1 + entered + changed + kept")
