@@ -1,0 +1,19 @@
+{
+    "_meta": {
+        "key": "3308",
+        "timestamp": "2021-09-10T13:12:04.161000+00:00"
+    },
+    "foo-bar-baz-local/ABC/2021/Public/DEF.txt": {
+        "repo_key": "foo-bar-baz-local",
+        "path": "ABC/2021/Public/DEF.txt",
+        "size_bytes": 14,
+        "last_update": "2021-09-10 11:04:08.214609+00:00",
+        "sha1_lc_hex": "950e189624aa6d753077940f657b7ea8a67159d1",
+        "md5_lc_hex": "5da6fa6713b848ad18c16cf655859960",
+        "sha256_lc_hex": "a157d0670337432cb74ebb139f8f4febb314bce7218bf65df83770de73d0a78b",
+        "bucket_path": "BRM_ANCHOR/BRM_NAME/data/filestore/95/950e189624aa6d753077940f657b7ea8a67159d1",
+        "bucket_present": true,
+        "bucket_size_bytes": 14,
+        "bucket_modify": "2021-09-10 11:04:08.228609+00:00"
+    }
+}
