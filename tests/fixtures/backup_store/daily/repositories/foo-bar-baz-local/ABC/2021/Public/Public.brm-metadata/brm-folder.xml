@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<brm-folder>
+  <repoPath>
+    <repoKey>foo-bar-baz-local</repoKey>
+    <path>ABC/2021/Public</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>Public</name>
+  <created>1604475734567</created>
+  <lastModified>1604475745678</lastModified>
+  <additionalInfo>
+    <createdBy>some</createdBy>
+    <modifiedBy>other</modifiedBy>
+    <lastUpdated>1604475745678</lastUpdated>
+  </additionalInfo>
+</brm-folder>
