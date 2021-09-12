@@ -1,6 +1,10 @@
 # python-stativ
 
-Manage the back end of Binaries Repository Management (BRM) systems like a tripod: Per prefix, backup, and delta store.
+Manage the back end of Binaries Repository Management (BRM) systems like a tripod: 
+
+* prefix store
+* backup store
+* delta store
 
 ## Status
 
