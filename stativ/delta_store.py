@@ -21,7 +21,7 @@ def is_delta_store(delta_store_root: pathlib.Path, deep_inspection=False) -> boo
 
     if deep_inspection:
         try:
-            with open(proxy_path, "rt", encoding=ENCODING) as handle:
+            with open(proxy_path, 'rt', encoding=ENCODING) as handle:
                 _ = json.load(handle)
         except json.JSONDecodeError:
             return False
@@ -33,7 +33,7 @@ def _dump(aspect_store: dict, path: pathlib.Path, indent=False) -> bool:
     """DRY."""
     options = {'indent': 2} if indent else {}
     try:
-        with open(path, "wt", encoding=ENCODING) as handle:
+        with open(path, 'wt', encoding=ENCODING) as handle:
             json.dump(aspect_store, handle, **options)
     except Exception:  # pylint: disable=broad-except
         return False
