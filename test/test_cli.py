@@ -1,14 +1,10 @@
-# -*- coding: utf-8 -*-
-# pylint: disable=missing-docstring,unused-import,reimported
 import hashlib
 import pathlib
 
-import pytest  # type: ignore
-
 import stativ.stativ as tripod
 
-BRM_HASH_POLICY_DEFAULT = "sha256"
-BRM_HASH_POLICY_LEGACY = "sha1"
+BRM_HASH_POLICY_DEFAULT = 'sha256'
+BRM_HASH_POLICY_LEGACY = 'sha1'
 BRM_HASH_POLICIES_KNOWN = (BRM_HASH_POLICY_DEFAULT, BRM_HASH_POLICY_LEGACY)
 
 ALGORITHMS = {
@@ -25,21 +21,11 @@ PREFIX_STORE_DATA_FILE_1_CONTENT_SAMPLE = pathlib.Path(PREFIX_DATA_SHA1, SHA1[:2
 FPS_DATA = f'{BRM_HASH_POLICY_DEFAULT}:{SHA256},{BRM_HASH_POLICY_LEGACY}:{SHA1}'
 
 BACKUP_STORE_DATA_ROOT = pathlib.Path('tests', 'fixtures', 'backup_store', 'daily')
-BACKUP_DATA_REPO_SAMPLE = pathlib.Path(
-    BACKUP_STORE_DATA_ROOT, 'repositories', 'foo-bar-baz-local'
-)
-BACKUP_DATA_REPO_FOLDER_LEVEL_1_SAMPLE = pathlib.Path(
-    BACKUP_DATA_REPO_SAMPLE, 'ABC'
-)
-BACKUP_DATA_REPO_FOLDER_LEVEL_2_SAMPLE = pathlib.Path(
-    BACKUP_DATA_REPO_FOLDER_LEVEL_1_SAMPLE, '2021'
-)
-BACKUP_DATA_REPO_FOLDER_LEVEL_3_SAMPLE = pathlib.Path(
-    BACKUP_DATA_REPO_FOLDER_LEVEL_2_SAMPLE, 'Public'
-)
-BACKUP_DATA_REPO_FOLDER_LEVEL_3_FILE_1_CONTENT_SAMPLE = pathlib.Path(
-    BACKUP_DATA_REPO_FOLDER_LEVEL_3_SAMPLE, 'DEF.txt'
-)
+BACKUP_DATA_REPO_SAMPLE = pathlib.Path(BACKUP_STORE_DATA_ROOT, 'repositories', 'foo-bar-baz-local')
+BACKUP_DATA_REPO_FOLDER_LEVEL_1_SAMPLE = pathlib.Path(BACKUP_DATA_REPO_SAMPLE, 'ABC')
+BACKUP_DATA_REPO_FOLDER_LEVEL_2_SAMPLE = pathlib.Path(BACKUP_DATA_REPO_FOLDER_LEVEL_1_SAMPLE, '2021')
+BACKUP_DATA_REPO_FOLDER_LEVEL_3_SAMPLE = pathlib.Path(BACKUP_DATA_REPO_FOLDER_LEVEL_2_SAMPLE, 'Public')
+BACKUP_DATA_REPO_FOLDER_LEVEL_3_FILE_1_CONTENT_SAMPLE = pathlib.Path(BACKUP_DATA_REPO_FOLDER_LEVEL_3_SAMPLE, 'DEF.txt')
 BACKUP_DATA_REPO_FOLDER_LEVEL_3_FILE_1_META_SAMPLE = pathlib.Path(
     BACKUP_DATA_REPO_FOLDER_LEVEL_3_SAMPLE, 'DEF.txt.brm-metadata'
 )
@@ -54,15 +40,15 @@ def _hashes(path_string, algorithms=None):
         algorithms = {BRM_HASH_POLICY_DEFAULT: hashlib.sha256}
     for key in algorithms:
         if key not in BRM_HASH_POLICIES_KNOWN:
-            raise ValueError("hashes received unexpected algorithm key.")
+            raise ValueError('hashes received unexpected algorithm key.')
 
     path = pathlib.Path(path_string)
     if not path.is_file():
-        raise IOError("path is no file.")
+        raise IOError('path is no file.')
 
     accumulator = {k: f() for k, f in algorithms.items()}
-    with open(path, "rb") as in_file:
-        for byte_block in iter(lambda in_f=in_file: in_f.read(BUFFER_BYTES), b""):
+    with open(path, 'rb') as in_file:
+        for byte_block in iter(lambda in_f=in_file: in_f.read(BUFFER_BYTES), b''):
             for k in algorithms:
                 accumulator[k].update(byte_block)
 
@@ -92,7 +78,7 @@ def test_backup_store_fixture_ok():
     assert BACKUP_DATA_REPO_FOLDER_LEVEL_3_FILE_1_CONTENT_SAMPLE.is_file()
     assert BACKUP_DATA_REPO_FOLDER_LEVEL_3_FILE_1_META_SAMPLE.is_file()
     a_path = BACKUP_DATA_REPO_FOLDER_LEVEL_3_FILE_1_META_SAMPLE
-    with open(a_path, "rt", encoding=tripod.ENCODING) as handle:
+    with open(a_path, 'rt', encoding=tripod.ENCODING) as handle:
         meta = handle.read()
     assert SHA1 in meta
     assert SHA256 in meta
