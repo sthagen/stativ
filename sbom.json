@@ -2,10 +2,10 @@
   "$schema": "http://cyclonedx.org/schema/bom-1.4.schema.json",
   "bomFormat": "CycloneDX",
   "specVersion": "1.4",
-  "serialNumber": "urn:uuid:0a3fa0e0-654c-477a-8901-91ee91f23a6d",
+  "serialNumber": "urn:uuid:9ba0300c-ce54-4df6-88ee-ed2fbead2257",
   "version": 1,
   "metadata": {
-    "timestamp": "2022-07-31T10:32:10.415260+00:00",
+    "timestamp": "2022-07-31T12:33:54.921530+00:00",
     "tools": [
       {
         "vendor": "CycloneDX",
@@ -56,14 +56,14 @@
   "components": [
     {
       "type": "library",
-      "bom-ref": "87ac3a4a-8fc7-469b-9fdc-c62bf063b397",
+      "bom-ref": "142c2c0e-5924-46fb-af0d-83137e4dce6a",
       "name": "scooby",
       "version": "0.6.0",
       "purl": "pkg:pypi/scooby@0.6.0"
     },
     {
       "type": "library",
-      "bom-ref": "a3a9bfc3-19be-490e-b82a-3246ddcc92dc",
+      "bom-ref": "23dce200-cf16-4ad7-9d11-93a3e81cb148",
       "name": "typer",
       "version": "0.6.1",
       "purl": "pkg:pypi/typer@0.6.1"
@@ -71,11 +71,11 @@
   ],
   "dependencies": [
     {
-      "ref": "87ac3a4a-8fc7-469b-9fdc-c62bf063b397",
+      "ref": "142c2c0e-5924-46fb-af0d-83137e4dce6a",
       "dependsOn": []
     },
     {
-      "ref": "a3a9bfc3-19be-490e-b82a-3246ddcc92dc",
+      "ref": "23dce200-cf16-4ad7-9d11-93a3e81cb148",
       "dependsOn": []
     }
   ]
