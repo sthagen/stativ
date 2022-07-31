@@ -12,7 +12,7 @@ ALGORITHMS = {
     BRM_HASH_POLICY_LEGACY: hashlib.sha1,
 }
 
-PREFIX_STORE_DATA_ROOT = pathlib.Path('tests', 'fixtures', 'prefix_store')
+PREFIX_STORE_DATA_ROOT = pathlib.Path('test', 'fixtures', 'prefix_store')
 PREFIX_DATA_SHA1 = pathlib.Path(PREFIX_STORE_DATA_ROOT, 'sha1')
 SHA1 = '950e189624aa6d753077940f657b7ea8a67159d1'
 SHA256 = 'a157d0670337432cb74ebb139f8f4febb314bce7218bf65df83770de73d0a78b'
@@ -20,7 +20,7 @@ PREFIX_STORE_DATA_FILE_1_CONTENT_SAMPLE = pathlib.Path(PREFIX_DATA_SHA1, SHA1[:2
 
 FPS_DATA = f'{BRM_HASH_POLICY_DEFAULT}:{SHA256},{BRM_HASH_POLICY_LEGACY}:{SHA1}'
 
-BACKUP_STORE_DATA_ROOT = pathlib.Path('tests', 'fixtures', 'backup_store', 'daily')
+BACKUP_STORE_DATA_ROOT = pathlib.Path('test', 'fixtures', 'backup_store', 'daily')
 BACKUP_DATA_REPO_SAMPLE = pathlib.Path(BACKUP_STORE_DATA_ROOT, 'repositories', 'foo-bar-baz-local')
 BACKUP_DATA_REPO_FOLDER_LEVEL_1_SAMPLE = pathlib.Path(BACKUP_DATA_REPO_SAMPLE, 'ABC')
 BACKUP_DATA_REPO_FOLDER_LEVEL_2_SAMPLE = pathlib.Path(BACKUP_DATA_REPO_FOLDER_LEVEL_1_SAMPLE, '2021')

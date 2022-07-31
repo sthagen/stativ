@@ -6,7 +6,7 @@ import pathlib
 import stativ.delta_store as delta
 import stativ.stativ as tripod
 
-DELTA_STORE_DATA_ROOT = pathlib.Path('tests', 'fixtures', 'delta_store')
+DELTA_STORE_DATA_ROOT = pathlib.Path('test', 'fixtures', 'delta_store')
 DELTA_PROXY_ROOT = pathlib.Path(DELTA_STORE_DATA_ROOT, 'store')
 DELTA_PROXY_DB_SAMPLE = pathlib.Path(DELTA_PROXY_ROOT, 'proxy.json')
 
