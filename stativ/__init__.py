@@ -17,8 +17,8 @@ DEFAULT_CONFIG_NAME = '.stativ.json'
 DEFAULT_LF_ONLY = 'YES'
 
 # [[[fill git_describe()]]]
-__version__ = '2022.7.28+parent.9fb117a4'
-# [[[end]]] (checksum: a143e8c8551090fa81324b0683ba1a40)
+__version__ = '2022.7.30+parent.4310af46'
+# [[[end]]] (checksum: 036de950b54c76d188cd1be3c9510a3e)
 __version_info__ = tuple(
     e if '-' not in e else e.split('-')[0] for part in __version__.split('+') for e in part.split('.') if e != 'parent'
 )
