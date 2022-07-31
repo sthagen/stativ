@@ -1,10 +1,6 @@
-# python-stativ
+# stativ
 
-Manage the back end of Binaries Repository Management (BRM) systems like a tripod: 
-
-* prefix store
-* backup store
-* delta store
+Tripod (Denish: stativ) - manage the back end of Binaries Repository Management (BRM) systems like a tripod: per prefix, backup, and delta store.
 
 ## Status
 
