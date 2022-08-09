@@ -16,7 +16,7 @@ User and developer [documentation of stativ](https://codes.dilettant.life/docs/s
 
 ## Bug Tracker
 
-Feature requests and bug reports are bested entered in the [todos of stativ](https://todo.sr.ht/~sthagen/stativ).
+Feature requests and bug reports are best entered in the [todos of stativ](https://todo.sr.ht/~sthagen/stativ).
 ## Primary Source repository
 
 The primary source repository of [stativ is at sourcehut](https://git.sr.ht/~sthagen/stativ)
