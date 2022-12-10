@@ -3,6 +3,8 @@ site_description: "Tripod (Denish: stativ) - manage the back end of Binaries Rep
 
 theme:
   name: 'material'
+  logo: assets/logo.png
+  favicon: images/favicon.ico
   features:
     - navigation.expand
     - toc.integrate
