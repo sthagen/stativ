@@ -1,5 +1,9 @@
 # Change History
 
+## Source
+
+* Migrated to ruff and pyproject.toml configuration
+
 ## 2022.7.31
 
 * Fixed link to home page and changed source of download counts.
