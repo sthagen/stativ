@@ -1,12 +1,12 @@
-# -*- coding: utf-8 -*-
-# pylint: disable=missing-docstring
 import json
 import pathlib
+from typing import no_type_check
 
 ENCODING = 'utf-8'
 
 
-def is_delta_store(delta_store_root: pathlib.Path, deep_inspection=False) -> bool:
+@no_type_check
+def is_delta_store(delta_store_root: pathlib.Path, deep_inspection: bool = False) -> bool:
     """Belts and braces."""
     if not delta_store_root.is_dir():
         return False
@@ -29,7 +29,8 @@ def is_delta_store(delta_store_root: pathlib.Path, deep_inspection=False) -> boo
     return True
 
 
-def _dump(aspect_store: dict, path: pathlib.Path, indent=False) -> bool:
+@no_type_check
+def _dump(aspect_store: dict, path: pathlib.Path, indent: bool = False) -> bool:
     """DRY."""
     options = {'indent': 2} if indent else {}
     try:
@@ -40,26 +41,31 @@ def _dump(aspect_store: dict, path: pathlib.Path, indent=False) -> bool:
     return True
 
 
-def dump_gone(aspect_store: dict, indent=False) -> bool:
+@no_type_check
+def dump_gone(aspect_store: dict, indent: bool = False) -> bool:
     """Not too dry ..."""
     return _dump(aspect_store, pathlib.Path('gone.json'), indent)
 
 
-def dump_change(aspect_store: dict, indent=False) -> bool:
+@no_type_check
+def dump_change(aspect_store: dict, indent: bool = False) -> bool:
     """Not too dry ..."""
     return _dump(aspect_store, pathlib.Path('change.json'), indent)
 
 
-def dump_enter(aspect_store: dict, indent=False) -> bool:
+@no_type_check
+def dump_enter(aspect_store: dict, indent: bool = False) -> bool:
     """Not too dry ..."""
     return _dump(aspect_store, pathlib.Path('enter.json'), indent)
 
 
-def dump_keep(aspect_store: dict, indent=False) -> bool:
+@no_type_check
+def dump_keep(aspect_store: dict, indent: bool = False) -> bool:
     """Not too dry ..."""
     return _dump(aspect_store, pathlib.Path('keep.json'), indent)
 
 
-def dump_remain(aspect_store: dict, indent=False) -> bool:
+@no_type_check
+def dump_remain(aspect_store: dict, indent: bool = False) -> bool:
     """Not too dry ..."""
     return _dump(aspect_store, pathlib.Path('remain.json'), indent)

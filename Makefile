@@ -1,8 +1,8 @@
-SHELL = /bin/bash
-
 .DEFAULT_GOAL := all
-isort = isort stativ test
 black = black -S -l 120 --target-version py310 stativ test
+lint = ruff stativ test
+pytest = pytest --asyncio-mode=strict --cov=stativ --cov-report term-missing:skip-covered --cov-branch --log-format="%(levelname)s %(message)s"
+types = mypy stativ
 
 .PHONY: install
 install:
@@ -16,7 +16,7 @@ install-all: install
 
 .PHONY: format
 format:
-	$(isort)
+	$(lint) --fix
 	$(black)
 
 .PHONY: init
@@ -27,17 +27,16 @@ init:
 .PHONY: lint
 lint:
 	python setup.py check -ms
-	flake8 stativ/ test/
-	$(isort) --check-only --df
+	$(lint)
 	$(black) --check --diff
 
 .PHONY: types
 types:
-	@echo Skipping mypy stativ
+	$(types)
 
 .PHONY: test
 test: clean
-	pytest --cov=stativ --log-format="%(levelname)s %(message)s" --asyncio-mode=strict
+	$(pytest)
 
 .PHONY: testcov
 testcov: test

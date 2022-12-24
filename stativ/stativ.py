@@ -1,13 +1,10 @@
-# -*- coding: utf-8 -*-
-# pylint: disable=missing-docstring
-# -*- coding: utf-8 -*-
-# pylint: disable=line-too-long,missing-docstring
 """Harvest the release mappings to bucket store from the backup tree."""
 import copy
 import datetime as dti
 import json
 import os
 import pathlib
+from typing import no_type_check
 
 import stativ.delta_store as delta
 
@@ -19,6 +16,7 @@ ENCODING = 'utf-8'
 BRM_BACKUP_ROOT = pathlib.Path(BRM_ANCHOR, BRM_NAME, 'backup/')
 
 
+@no_type_check
 def main(argv=None):
     """Harvest information."""
     if argv:
