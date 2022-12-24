@@ -2,20 +2,20 @@
   "$schema": "http://cyclonedx.org/schema/bom-1.4.schema.json",
   "bomFormat": "CycloneDX",
   "specVersion": "1.4",
-  "serialNumber": "urn:uuid:9ba0300c-ce54-4df6-88ee-ed2fbead2257",
+  "serialNumber": "urn:uuid:42c532b0-1fc5-45cb-bcf8-c0878fe74c49",
   "version": 1,
   "metadata": {
-    "timestamp": "2022-07-31T12:33:54.921530+00:00",
+    "timestamp": "2022-12-24T12:13:35.909257+00:00",
     "tools": [
       {
         "vendor": "CycloneDX",
         "name": "cyclonedx-bom",
-        "version": "3.5.0"
+        "version": "3.10.1"
       },
       {
         "vendor": "CycloneDX",
         "name": "cyclonedx-python-lib",
-        "version": "2.7.0",
+        "version": "2.7.1",
         "externalReferences": [
           {
             "url": "https://github.com/CycloneDX/cyclonedx-python-lib/actions",
@@ -56,26 +56,26 @@
   "components": [
     {
       "type": "library",
-      "bom-ref": "142c2c0e-5924-46fb-af0d-83137e4dce6a",
+      "bom-ref": "dcd05894-c5a9-47b4-bc6a-bbba0aacfcc6",
       "name": "scooby",
-      "version": "0.6.0",
-      "purl": "pkg:pypi/scooby@0.6.0"
+      "version": "0.7.0",
+      "purl": "pkg:pypi/scooby@0.7.0"
     },
     {
       "type": "library",
-      "bom-ref": "23dce200-cf16-4ad7-9d11-93a3e81cb148",
+      "bom-ref": "b52e4e90-4cd9-4613-8b23-d392c82b2399",
       "name": "typer",
-      "version": "0.6.1",
-      "purl": "pkg:pypi/typer@0.6.1"
+      "version": "0.7.0",
+      "purl": "pkg:pypi/typer@0.7.0"
     }
   ],
   "dependencies": [
     {
-      "ref": "142c2c0e-5924-46fb-af0d-83137e4dce6a",
+      "ref": "dcd05894-c5a9-47b4-bc6a-bbba0aacfcc6",
       "dependsOn": []
     },
     {
-      "ref": "23dce200-cf16-4ad7-9d11-93a3e81cb148",
+      "ref": "b52e4e90-4cd9-4613-8b23-d392c82b2399",
       "dependsOn": []
     }
   ]
