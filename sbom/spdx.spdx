@@ -1,0 +1,60 @@
+SPDXVersion: SPDX-2.3
+DataLicense: CC0-1.0
+DocumentNamespace: https://cyclonedx/8a18d87e-7b83-4e99-bd43-03f2b5094e6f_1
+DocumentName: From-Cyclone-DX
+SPDXID: SPDXRef-DOCUMENT
+
+## Creation Information
+Creator: Tool: CycloneDX:cyclonedx-bom-3.11.0
+Creator: Tool: CycloneDX:cyclonedx-python-lib-3.1.1
+Creator: Tool: CycloneToSpdx-0.1.4
+Created: 2023-06-24T20:42:33Z
+CreatorComment: <text>Converted from CycloneDX spec version 1.4</text>
+LicenseListVersion: 3.21
+## Annotations
+Annotator: Tool: CycloneToSpdx
+AnnotationDate: 2023-06-24T20:42:36Z
+AnnotationComment: <text>MISSING_CDX_PROPERTY:extensions={}</text>
+AnnotationType: OTHER
+SPDXREF: SPDXRef-DOCUMENT
+## Relationships
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-38a3af5b-91d0-456b-98de-e63d79476897
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-c55658eb-0838-486f-ba3a-8ad963fb9961
+
+## Package Information
+PackageName: scooby
+SPDXID: SPDXRef-c55658eb-0838-486f-ba3a-8ad963fb9961
+PackageVersion: 0.7.2
+PackageDownloadLocation: NOASSERTION
+PrimaryPackagePurpose: LIBRARY
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+ExternalRef: PACKAGE-MANAGER purl pkg:pypi/scooby@0.7.2
+## Annotations
+Annotator: Tool: CycloneToSpdx
+AnnotationDate: 2023-06-24T20:42:36Z
+AnnotationComment: <text>MISSING_CDX_PROPERTY:componentType="LIBRARY"</text>
+AnnotationType: OTHER
+SPDXREF: SPDXRef-c55658eb-0838-486f-ba3a-8ad963fb9961
+FilesAnalyzed: false
+
+## Package Information
+PackageName: typer
+SPDXID: SPDXRef-38a3af5b-91d0-456b-98de-e63d79476897
+PackageVersion: 0.9.0
+PackageDownloadLocation: NOASSERTION
+PrimaryPackagePurpose: LIBRARY
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+ExternalRef: PACKAGE-MANAGER purl pkg:pypi/typer@0.9.0
+## Annotations
+Annotator: Tool: CycloneToSpdx
+AnnotationDate: 2023-06-24T20:42:36Z
+AnnotationComment: <text>MISSING_CDX_PROPERTY:componentType="LIBRARY"</text>
+AnnotationType: OTHER
+SPDXREF: SPDXRef-38a3af5b-91d0-456b-98de-e63d79476897
+FilesAnalyzed: false
+
+
