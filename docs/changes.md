@@ -1,13 +1,12 @@
-# Change History
+# Changes
 
-## Source
+Source
+:    * Migrated to ruff and pyproject.toml configuration
 
-* Migrated to ruff and pyproject.toml configuration
+## 2022
 
-## 2022.7.31
+2022.7.31
+:    * Fixed link to home page and changed source of download counts.
 
-* Fixed link to home page and changed source of download counts.
-
-## 2022.7.30
-
-* Initial release on PyPI
+2022.7.30
+:    * Initial release on PyPI
