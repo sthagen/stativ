@@ -11,6 +11,7 @@ Third party dependencies are documented in the folder [third-party](third-party/
 [![wheel](https://img.shields.io/pypi/wheel/stativ.svg?style=flat)](https://pypi.python.org/pypi/stativ/)
 [![supported-versions](https://img.shields.io/pypi/pyversions/stativ.svg?style=flat)](https://pypi.python.org/pypi/stativ/)
 [![supported-implementations](https://img.shields.io/pypi/implementation/stativ.svg?style=flat)](https://pypi.python.org/pypi/stativ/)
+[![maintenance-status](https://img.shields.io/github/commit-activity/y/sthagen/stativ.svg?style=flat)](https://git.sr.ht/~sthagen/stativ/log)
 
 ## Bug Tracker
 
