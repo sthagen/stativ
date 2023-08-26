@@ -7,7 +7,7 @@ Tripod (Denish: stativ) - manage the back end of Binaries Repository Management 
 Third party dependencies are documented in the folder [third-party](docs/third-party/README.md).
 
 [![version](https://img.shields.io/pypi/v/stativ.svg?style=flat)](https://pypi.python.org/pypi/stativ/)
-[![downloads](https://pepy.tech/badge/stativ/month)](https://pepy.tech/project/stativ)
+[![downloads](https://static.pepy.tech/badge/stativ/month)](https://pepy.tech/project/stativ)
 [![wheel](https://img.shields.io/pypi/wheel/stativ.svg?style=flat)](https://pypi.python.org/pypi/stativ/)
 [![supported-versions](https://img.shields.io/pypi/pyversions/stativ.svg?style=flat)](https://pypi.python.org/pypi/stativ/)
 [![supported-implementations](https://img.shields.io/pypi/implementation/stativ.svg?style=flat)](https://pypi.python.org/pypi/stativ/)
