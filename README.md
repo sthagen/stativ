@@ -3,7 +3,8 @@
 Tripod (Denish: stativ) - manage the back end of Binaries Repository Management (BRM) systems like a tripod: per prefix, backup, and delta store.
 
 [License: MIT](https://git.sr.ht/~sthagen/stativ/tree/default/item/LICENSE) | 
-[Country of origin: Switzerland](https://git.sr.ht/~sthagen/stativ/tree/default/item/COUNTRY-OF-ORIGIN)
+[Country of origin: Switzerland](https://git.sr.ht/~sthagen/stativ/tree/default/item/COUNTRY-OF-ORIGIN) | 
+[Export control classification number(ECCN): EAR99](https://git.sr.ht/~sthagen/stativ/tree/default/item/EXPORT-CONTROL-CLASSIFICATION-NUMBER)
 
 Third party dependencies are documented in the folder [third-party](docs/third-party/README.md).
 
