@@ -1,2 +1,2 @@
-scooby==0.7.4
+scooby==0.8.0
 typer==0.9.0
