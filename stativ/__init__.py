@@ -17,8 +17,8 @@ DEFAULT_CONFIG_NAME = f'.{APP_ALIAS}.json'
 DEFAULT_LF_ONLY = 'YES'
 
 # [[[fill git_describe()]]]
-__version__ = '2022.7.31+parent.12b228ee'
-# [[[end]]] (checksum: a8220c43ffb3a4c7c1320d5f3eaf7b50)
+__version__ = '2023.10.21+parent.e17e34ad'
+# [[[end]]] (checksum: 236e89dfa601be667bceab3da3302906)
 __version_info__ = tuple(
     e if '-' not in e else e.split('-')[0] for part in __version__.split('+') for e in part.split('.') if e != 'parent'
 )
