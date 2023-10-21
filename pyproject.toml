@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "stativ"
-version = "2022.7.31"
+version = "2023.10.21"
 description = "Tripod (Denish: stativ) - manage the back end of Binaries Repository Management (BRM) systems like a tripod: per prefix, backup, and delta store."
 readme = "README.md"
 authors = [{ name = "Stefan Hagen", email = "stefan@hagen.link" }]
