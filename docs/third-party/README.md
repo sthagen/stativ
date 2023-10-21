@@ -1,8 +1,8 @@
 # Third Party Dependencies
 
 <!--[[[fill sbom_sha256()]]]-->
-The [SBOM in CycloneDX v1.4 JSON format](https://git.sr.ht/~sthagen/stativ/blob/default/sbom/cdx.json) with SHA256 checksum ([45b0aa54 ...](https://git.sr.ht/~sthagen/stativ/blob/default/sbom/cdx.json.sha256 "sha256:45b0aa54771927a81aa2e8a8e5e280d001c4038aab8ae6397e386e34e488c228")).
-<!--[[[end]]] (checksum: 03f6bd90692a4675986b8e1feb5f3a67)-->
+The [SBOM in CycloneDX v1.4 JSON format](https://git.sr.ht/~sthagen/stativ/blob/default/sbom/cdx.json) with SHA256 checksum ([7dd3f6aa ...](https://git.sr.ht/~sthagen/stativ/blob/default/sbom/cdx.json.sha256 "sha256:7dd3f6aa974b20c460c985fa7939aa14ff06f5f5415f29fced06be4c02ae3cfd")).
+<!--[[[end]]] (checksum: 5467eaf47c2ece5e657b6ddc6c4f74d5)-->
 ## Licenses 
 
 JSON files with complete license info of: [direct dependencies](direct-dependency-licenses.json) | [all dependencies](all-dependency-licenses.json)
@@ -12,17 +12,17 @@ JSON files with complete license info of: [direct dependencies](direct-dependenc
 <!--[[[fill direct_dependencies_table()]]]-->
 | Name                                             | Version                                         | License     | Author                                                              | Description (from packaging data)                                  |
 |:-------------------------------------------------|:------------------------------------------------|:------------|:--------------------------------------------------------------------|:-------------------------------------------------------------------|
-| [scooby](https://github.com/banesullivan/scooby) | [0.7.4](https://pypi.org/project/scooby/0.7.4/) | MIT License | Dieter Werthmüller, Bane Sullivan, Alex Kaszynski, and contributors | A Great Dane turned Python environment detective                   |
+| [scooby](https://github.com/banesullivan/scooby) | [0.9.2](https://pypi.org/project/scooby/0.9.2/) | MIT License | Dieter Werthmüller, Bane Sullivan, Alex Kaszynski, and contributors | A Great Dane turned Python environment detective                   |
 | [typer](https://github.com/tiangolo/typer)       | [0.9.0](https://pypi.org/project/typer/0.9.0/)  | MIT License | Sebastián Ramírez                                                   | Typer, build great CLIs. Easy to code. Based on Python type hints. |
-<!--[[[end]]] (checksum: 6fb519caaa2367dd5d30af94507ac29b)-->
+<!--[[[end]]] (checksum: 9daf881d3a72a1c5292c25171bae8bf6)-->
 
 ### Indirect Dependencies
 
 <!--[[[fill indirect_dependencies_table()]]]-->
-| Name                                          | Version                                        | License     | Author  | Description (from packaging data)         |
-|:----------------------------------------------|:-----------------------------------------------|:------------|:--------|:------------------------------------------|
-| [click](https://palletsprojects.com/p/click/) | [8.1.6](https://pypi.org/project/click/8.1.6/) | BSD License | UNKNOWN | Composable command line interface toolkit |
-<!--[[[end]]] (checksum: ec405dc73a3ccb02ae4ac4f6b5c7739e)-->
+| Name                                          | Version                                        | License     | Author                                | Description (from packaging data)         |
+|:----------------------------------------------|:-----------------------------------------------|:------------|:--------------------------------------|:------------------------------------------|
+| [click](https://palletsprojects.com/p/click/) | [8.1.6](https://pypi.org/project/click/8.1.6/) | BSD License | Pallets <contact@palletsprojects.com> | Composable command line interface toolkit |
+<!--[[[end]]] (checksum: 7b69d9be7fa227d2db394dcd865606d8)-->
 
 ## Dependency Tree(s)
 
@@ -38,9 +38,9 @@ Base graphviz file in dot format: [Trees of the direct dependencies](package-dep
 
 <!--[[[fill dependency_tree_console_text()]]]-->
 ````console
-scooby==0.7.4
+scooby==0.9.2
 typer==0.9.0
 ├── click [required: >=7.1.1,<9.0.0, installed: 8.1.6]
 └── typing-extensions [required: >=3.7.4.3, installed: 4.7.1]
 ````
-<!--[[[end]]] (checksum: 6d0062df9dd17e2b22bf3742e5e64b8f)-->
+<!--[[[end]]] (checksum: d448354db3c43fbf34f2bfa3219a5bea)-->
