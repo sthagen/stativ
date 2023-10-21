@@ -1,5 +1,7 @@
 site_name: Stativ
 site_description: "Tripod (Denish: stativ) - manage the back end of Binaries Repository Management (BRM) systems like a tripod: per prefix, backup, and delta store."
+docs_dir: ../docs
+site_dir: ../site
 
 theme:
   name: 'material'
