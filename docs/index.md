@@ -2,18 +2,15 @@
 
 Tripod (Denish: stativ) - manage the back end of Binaries Repository Management (BRM) systems like a tripod: per prefix, backup, and delta store.
 
-[License: MIT](https://git.sr.ht/~sthagen/stativ/tree/default/item/LICENSE) |
-[Country of origin: Switzerland](https://git.sr.ht/~sthagen/stativ/tree/default/item/COUNTRY-OF-ORIGIN) |
-[Export control classification number(ECCN): EAR99](https://git.sr.ht/~sthagen/stativ/tree/default/item/EXPORT-CONTROL-CLASSIFICATION-NUMBER)
+[![license](badges/license-spdx-mit.svg)](https://git.sr.ht/~sthagen/stativ/tree/default/item/LICENSE)
+[![Country of Origin](badges/country-of-origin-name-switzerland-neutral.svg)](https://git.sr.ht/~sthagen/stativ/tree/default/item/COUNTRY-OF-ORIGIN)
+[![Export Classification Control Number (ECCN)](badges/export-control-classification-number_eccn-ear99-neutral.svg)](https://git.sr.ht/~sthagen/stativ/tree/default/item/EXPORT-CONTROL-CLASSIFICATION-NUMBER)
+[![Configuration](badges/configuration-sbom.svg)](third-party/index.html)
 
-Third party dependencies are documented in the folder [third-party](third-party/README.md).
-
-[![version](https://img.shields.io/pypi/v/stativ.svg?style=flat)](https://pypi.python.org/pypi/stativ/)
-[![downloads](https://static.pepy.tech/badge/stativ/month)](https://pepy.tech/project/stativ)
-[![wheel](https://img.shields.io/pypi/wheel/stativ.svg?style=flat)](https://pypi.python.org/pypi/stativ/)
-[![supported-versions](https://img.shields.io/pypi/pyversions/stativ.svg?style=flat)](https://pypi.python.org/pypi/stativ/)
-[![supported-implementations](https://img.shields.io/pypi/implementation/stativ.svg?style=flat)](https://pypi.python.org/pypi/stativ/)
-[![maintenance-status](https://img.shields.io/github/commit-activity/y/sthagen/stativ.svg?style=flat)](https://git.sr.ht/~sthagen/stativ/log)
+[![Version](https://img.shields.io/pypi/v/stativ.svg?style=flat)](https://pypi.python.org/pypi/stativ/)
+[![Downloads](https://static.pepy.tech/badge/stativ/month)](https://pepy.tech/project/stativ)
+[![Supported Versions](https://img.shields.io/pypi/pyversions/stativ.svg?style=flat)](https://pypi.python.org/pypi/stativ/)
+[![Maintenance Status](https://img.shields.io/github/commit-activity/y/sthagen/stativ.svg?style=flat)](https://git.sr.ht/~sthagen/stativ/log)
 
 ## Bug Tracker
 
