@@ -9,7 +9,7 @@ Tripod (Denish: stativ) - manage the back end of Binaries Repository Management 
 
 [![Version](docs/badges/latest-release.svg)](https://pypi.python.org/pypi/stativ/)
 [![Downloads](docs/badges/downloads-per-month.svg)](https://pepy.tech/project/stativ)
-[![Supported Versions](https://img.shields.io/pypi/pyversions/stativ.svg?style=flat)](https://pypi.python.org/pypi/stativ/)
+[![Python](docs/badges/python-versions.svg)](https://pypi.python.org/pypi/stativ/)
 [![Maintenance Status](docs/badges/commits-per-year.svg)](https://git.sr.ht/~sthagen/stativ/log)
 
 ## Documentation
