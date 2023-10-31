@@ -7,7 +7,7 @@ Tripod (Denish: stativ) - manage the back end of Binaries Repository Management 
 [![Export Classification Control Number (ECCN)](badges/export-control-classification-number_eccn-ear99-neutral.svg)](https://git.sr.ht/~sthagen/stativ/tree/default/item/EXPORT-CONTROL-CLASSIFICATION-NUMBER)
 [![Configuration](badges/configuration-sbom.svg)](third-party/index.html)
 
-[![Version](https://img.shields.io/pypi/v/stativ.svg?style=flat)](https://pypi.python.org/pypi/stativ/)
+[![Version](badges/latest-release.svg)](https://pypi.python.org/pypi/stativ/)
 [![Downloads](badges/downloads-per-month.svg)](https://pepy.tech/project/stativ)
 [![Supported Versions](https://img.shields.io/pypi/pyversions/stativ.svg?style=flat)](https://pypi.python.org/pypi/stativ/)
 [![Maintenance Status](badges/commits-per-year.svg)](https://git.sr.ht/~sthagen/stativ/log)
