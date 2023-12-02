@@ -1,7 +1,7 @@
 {
   "stativ": {
-    "version": "7.3.2",
-    "timestamp": "2023-12-02T15:34:17.220980",
+    "coverage_tool_version": "7.3.2",
+    "timestamp": "2023-12-02 16:30:47 +00:00",
     "branch_coverage": true,
     "show_contexts": true,
     "covered_lines": 58,
@@ -13,6 +13,25 @@
     "num_branches": 76,
     "num_partial_branches": 2,
     "covered_branches": 8,
-    "missing_branches": 68
+    "missing_branches": 68,
+    "node_id": "c79891e5-aabf-3a83-95b9-588edcd8327f",
+    "nfiles": 6,
+    "files": [
+      "stativ/__init__.py",
+      "stativ/backup_store.py",
+      "stativ/cli.py",
+      "stativ/delta_store.py",
+      "stativ/prefix_store.py",
+      "stativ/stativ.py"
+    ],
+    "blake3": "112b41f3d90d84e101b3d3f9b4876eb400272ade4348bcf4d2b913ece94bfc7f",
+    "blake2": "0ee0f0034a800d64eb3bf05a6d573346143ac59b0ebe3df849204d58a9f2fd992f333e5b1c3df231a1b7c372b38990bb6e538895fd74bdc1d7469af531a3a6f0",
+    "sha512": "898ea517b799e9b8627511306ef4a6ac9cce487fdb14824fd1da43042172fc2424425b339f4694159d4a1d9ac5bac95bbb4c6c1c0ce88b2f725a806c2dc4ecf5",
+    "sha384": "a765ceb17aa020ef333a24f51004df6791e9e80e93ad6092cbcc52bd3f95708016f69461e8bb49714d8c8dc0c898c77d",
+    "sha256": "b98966ebfbf51232272f306ceddd78688837bb4febf8b9166d1f8de46f2fcf88",
+    "sha1": "83d7e00e86b66cb6ae9ea8a569bce29218de88de",
+    "md5": "13cdfb9353409360a88f4f18a739283e",
+    "python_version": "3.10.12",
+    "entropy": 4.739548
   }
 }
