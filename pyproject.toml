@@ -7,6 +7,7 @@ name = "stativ"
 version = "2023.10.21"
 description = "Tripod (Denish: stativ) - manage the back end of Binaries Repository Management (BRM) systems like a tripod: per prefix, backup, and delta store."
 readme = "README.md"
+license = {file = "LICENSE"}
 authors = [{ name = "Stefan Hagen", email = "stefan@hagen.link" }]
 maintainers = [{ name = "Stefan Hagen", email = "stefan@hagen.link" }]
 classifiers = [
