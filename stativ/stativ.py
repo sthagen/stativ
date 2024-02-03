@@ -1,4 +1,5 @@
 """Harvest the release mappings to bucket store from the backup tree."""
+
 import copy
 import datetime as dti
 import json
